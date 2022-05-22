@@ -1,0 +1,57 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{markdown}
+\usepackage{mathtools}
+\usepackage{wrapfig}
+\usepackage{tabu}
+\usepackage{colortbl}
+\usepackage[hidelinks]{hyperref,xcolor}
+\usepackage[backend=biber]{biblatex}
+\usepackage{adjustbox}
+\usepackage{nomencl}
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+\addbibresource{projectplan.bib}
+\addbibresource{prr.bib}
+\addbibresource{frr.bib}
+
+\title{Final Research Report\\Remote Water Sensing using UAVs}
+\author{Robin \textsc{Westerik}}
+\newcommand{\supervisors}{Jan \textsc{Bollen}\\Harry \textsc{Futselaar}}
+
+\newcommand{\timePeriod}{February 2022 - June 2022}
+\newcommand{\sprint}{Research}
+\newcommand{\homepage}{\url{https://github.com/organizations/remotewatersensing/}}
+\date{\today}
+
+\makeatletter{}
+
+\makenomenclature
+\renewcommand{\nomname}{}
+
+\begin{document}
+
+\input{./title.tex}
+\input{./nomenclature.tex}
+
+\tableofcontents
+\pagebreak
+
+\section{Abbreviations}
+\sffamily\footnotesize
+\printnomenclature
+\rmfamily\normalsize
+
+\section{Introduction}
+
+In this final research report, the designed prototypes will be tested on several quantitative and qualitative features will be tested. These
+features include accuracy, speed, and cost. 
+
+\input{sensors/00_main}
+
+
+\pagebreak
+\printbibliography 
+
+\end{document}
